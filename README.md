@@ -5,5 +5,6 @@ The documentaion and repository can be obtained here: [ neorv32 ](https://github
 
 I have choosen [Xilinx Zedboard](https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zedboard) as the FPGA for my implementation. 
 
-Initial steps would be to have a test setup for Zedboard fpga implementing neorv softcore. The admin has created test setups for many fpga boards. I chose arty-a7-test-setup (https://github.com/stnolting/neorv32-setups/tree/main/vivado/arty-a7-test-setup)
+Initial steps would be to have a test setup for Zedboard fpga implementing neorv softcore. 
+The admin has created test setups for many fpga boards. I chose [arty-a7-test-setup](https://github.com/stnolting/neorv32-setups/tree/main/vivado/arty-a7-test-setup)
 and tweaked it for the Zedboard. The corresponding test setup is seen in this repository.
