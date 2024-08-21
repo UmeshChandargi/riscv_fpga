@@ -1,29 +1,31 @@
-# NEORV32 Test Setup for the Digilent Arty A7-35 FPGA Board
+# NEORV32 Test Setup for the Zedboard
 
-This setup provides a very simple script-based "demo setup" that allows to check out the NEORV32 processor on the Digilent Arty A7-35 board.
-It uses the simplified [`neorv32_test_setup_bootloader.vhd`](https://github.com/stnolting/neorv32/blob/master/rtl/test_setups/neorv32_test_setup_bootloader.vhd) top entity, which is a wrapper for the actual processor
-top entity that provides a minimalistic interface (clock, reset, UART and 4 LEDs).
+This setup is done for the ethernet driver of the zynq700 controlled by neorv32. The workspace is a part of the bigger git repo 
+[`neorv32-setups`](https://github.com/stnolting/neorv32-setups/tree/main) 
+This new [`zedboard-test-IP_Integration`] test setup should be added to the following location [`neorv32-setups/vivado/`](https://github.com/stnolting/neorv32-setups/tree/main/vivado) 
+top entity that provides a minimalistic interface (clock, reset, UART, 4 LED, external JTAG for the neorv, ethernet driver of the PS zynq7000).
 
-* FPGA Board: :books: [Digilent Arty A7-35 FPGA Board](https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual)
-* FPGA: Xilinx Artix-7 `XC7A35TICSG324-1L`
-* Toolchain: Xilinx Vivado (tested with Vivado 2019.2)
+* FPGA Board: :books: [Zedboard](https://files.digilent.com/resources/programmable-logic/zedboard/ZedBoard_HW_UG_v2_2.pdf)
+* FPGA: Xilinx-IC SOC CORTEX-A9 ARTIX-7 484BGA `xc7z020clg484-1`
+* Toolchain: Xilinx Vivado (tested with Vivado 2024.1)
 
 
 ## NEORV32 Configuration
 
-:information_source: See the top entity [`rtl/test_setups/neorv32_test_setup_bootloader.vhd` ](https://github.com/stnolting/neorv32/blob/master/rtl/test_setups/neorv32_test_setup_bootloader.vhd) for
-configuration and entity details and [`arty_a7_35_test_setup.xdc`](https://github.com/stnolting/neorv32/blob/master/boards/arty-a7-35-test-setup/arty_a7_35_test_setup.xdc)
+:information_source: See the Block design [`project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd` ](https://github.com/UmeshChandargi/riscv_fpga/blob/main/zedboard-test-IP_Integration/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd) for
+configuration and entity details and [`project_1/project_1.srcs/constrs_1/new/design_1.xdc`](https://github.com/UmeshChandargi/riscv_fpga/blob/main/zedboard-test-IP_Integration/project_1/project_1.srcs/constrs_1/new/design_1.xdc)
 for the according FPGA pin mapping.
 
-* CPU: `rv32imcu_Zicsr` + 4 `HPM` (hardware performance monitors)
-* Memory: 16kB instruction memory (internal IMEM), 8kB data memory (internal DMEM), bootloader ROM
-* Peripherals: `GPIO`, `MTIME`, `UART0`, `WDT`
-* Tested with version [`1.5.3.3`](https://github.com/stnolting/neorv32/blob/master/CHANGELOG.md)
+* CPU: `RISCV- C , Zicsr and M ISA extension` 
+  * C (Compresses Instructions)
+  * M (Integer Multiplication and Division)
+  * Zicsr (Control and Status Register (CSR) Instructions)
+* Memory: 256kB instruction memory (internal IMEM), 64kB data memory (internal DMEM), bootloader ROM
+* Peripherals: `GPIO`, `External JTAG`, `UART0`, `ETHERNET`
 * Clock: 100MHz from on-board oscillator
 * Reset: Via dedicated on-board "RESET" button
-* GPIO output port `gpio_o`
-  * bits 0..3 are connected to the green on-board LEDs (LD4 - LD7); LD4 is the bootloader status LED
-  * bits 4..7 are (not actually used) connected to PMOD `JA` connector pins 1-4
-* UART0 signals `uart0_txd_o` and `uart0_rxd_i` are connected to the on-board USB-UART chip
+* GPIO output port `gpio_o`. Connected to 8 LEDs
+* UART0 signals `uart0_txd_o` and `uart0_rxd_i` are connected to the PMODs and further connected to an external USB-UART chip
+* JTAG signals `jtag_trst_i`, `jtag_tck_i`, `jtag_tdi_i`, `jtag_tms_i` and `jtag_tdo_o` are connected to PMODs which are further connected to an external JTAG `ATMEL SAM-ICE JLink` adapter
 
 
