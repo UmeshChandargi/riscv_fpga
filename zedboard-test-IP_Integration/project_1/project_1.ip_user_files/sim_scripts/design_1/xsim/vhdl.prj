@@ -1,0 +1,58 @@
+vhdl neorv32  \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_package.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_application_image.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_boot_rom.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_bootloader_image.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_intercon.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cache.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cfs.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_clockgate.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_fifo.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_decompressor.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_control.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_regfile.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_cp_shifter.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_cp_muldiv.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_cp_bitmanip.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_cp_fpu.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_cp_cfu.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_cp_cond.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_alu.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_lsu.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu_pmp.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_cpu.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_crc.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_debug_dm.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_debug_dtm.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_dma.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_dmem.entity.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_dmem.default.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_gpio.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_gptmr.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_imem.entity.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_imem.default.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_mtime.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_neoled.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_onewire.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_pwm.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_sdi.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_slink.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_spi.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_sysinfo.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_xip.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_xbus.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_wdt.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_uart.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_twi.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_trng.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_xirq.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_top.vhd" \
+"../../../bd/design_1/ipshared/2266/src/neorv32/neorv32_vivado_ip.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_neorv32_vivado_ip_0_0/sim/design_1_neorv32_vivado_ip_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort

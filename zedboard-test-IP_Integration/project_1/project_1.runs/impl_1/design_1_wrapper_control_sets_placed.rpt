@@ -1,0 +1,130 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue Aug 13 18:34:04 2024
+| Host         : cr049.office.dreamchip.de running 64-bit Red Hat Enterprise Linux release 8.9 (Ootpa)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    52 |
+|    Minimum number of control sets                        |    52 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   113 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    52 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            6 |
+| No           | No                    | Yes                    |             531 |          198 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              16 |            3 |
+| Yes          | No                    | Yes                    |            1194 |          411 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal   |                                                                                                 Enable Signal                                                                                                 |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_i_IBUF_BUFG |                                                                                                                                                                                                               | rstn_i_IBUF                                                 |                2 |              3 |         1.50 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/FSM_sequential_tap_ctrl_state[3]_i_1_n_0                                                              | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dm_inst/FSM_onehot_dm_ctrl[cmderr][0]_i_1_n_0                                                                  | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/E[0]                                                        | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                3 |              4 |         1.33 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[bitcnt][3]_i_1_n_0                                                                          | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                2 |              4 |         2.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/tap_reg[ireg][4]_i_1_n_0                                                                              | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/ctrl[cnt]                                    | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mcause]0                                                                                    | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine_fifo_inst/we                                                                                |                                                             |                1 |              8 |         8.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/r_pnt_reg[0][0]                                                                                         |                                                             |                2 |              8 |         4.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[sreg][8]_i_1_n_0                                                                            | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                2 |              9 |         4.50 |
+| ~clk_i_IBUF_BUFG |                                                                                                                                                                                                               | rstn_i_IBUF                                                 |                5 |             10 |         2.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/tx_engine[baudcnt][9]_i_1_n_0                                                                         | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                4 |             10 |         2.50 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/rx_engine[baudcnt][9]_i_1_n_0                                                                         | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                4 |             10 |         2.50 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/io_system.neorv32_uart0_inst_true.neorv32_uart0_inst/tx_engine[bitcnt][3]_i_1_n_0                                                                          | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                3 |             13 |         4.33 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[10]_2[0]                                                                                        | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                8 |             16 |         2.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dm_inst/dm_ctrl[ldsw_progbuf][31]_i_1_n_0                                                                      | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                5 |             16 |         3.20 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                                                               |                                                             |                6 |             18 |         3.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mie_msi]_i_1_n_0                                                                                | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                7 |             19 |         2.71 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[2]_0                                                                                            | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                5 |             21 |         4.20 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/ipb[we][0]                                                  |                                                             |                3 |             24 |         8.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/FSM_sequential_fetch_engine_reg[state][0][0]                |                                                             |                3 |             24 |         8.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine[link_pc]                                                                             | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               16 |             31 |         1.94 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/trigger_module_enable.hw_trigger_fired_reg[0]               | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                9 |             31 |         3.44 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/fetch_engine[pc]                                                                                    | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               18 |             31 |         1.72 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[dpc]0                                                                                       | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               10 |             31 |         3.10 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[tdata2][31]_i_1_n_0                                                                             | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                8 |             31 |         3.88 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine[next_pc]                                                                             | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               27 |             31 |         1.15 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mtvec][31]_i_1_n_0                                                                              | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               10 |             31 |         3.10 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr_reg[mepc]0                                                                                      | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                9 |             31 |         3.44 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mscratch][31]_i_1_n_0                                                                           | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               13 |             32 |         2.46 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/bus_req_o_reg[rw]_1[0]                                                                                  | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dm_inst/dm_reg[command][31]_i_1_n_0                                                                            | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                7 |             32 |         4.57 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/tap_reg[idcode][31]_i_1_n_0                                                                           | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[6]_1[0]                                                                                         | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                6 |             32 |         5.33 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_lsu_inst/mar_reg[8]_1[0]                                                                                         | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               10 |             32 |         3.20 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/tap_reg[dtmcs][31]_i_1_n_0                                                                            | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/dmi_ctrl_reg[addr][0]_0[0]                                                                            | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                8 |             32 |         4.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/dmi_ctrl_reg[addr][0]_1[0]                                                                            | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |               12 |             32 |         2.67 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/dmi_ctrl_reg[busy]__0                                                                                 | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                8 |             32 |         4.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[dscratch0][31]_i_1_n_0                                                                          | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                9 |             32 |         3.56 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/div[sign_mod]                                | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |                9 |             33 |         3.67 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/execute_engine[ir_nxt]                                      | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               25 |             36 |         1.44 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_shifter_inst/shifter[sreg]                                                               | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               16 |             37 |         2.31 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/dmi_ctrl[wdata]                                                                                       | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |                9 |             39 |         4.33 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/neorv32_neorv32_ocd_inst_true.neorv32_debug_dtm_inst/tap_reg[dmi][40]_i_1_n_0                                                                              | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |               12 |             41 |         3.42 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/csr[mtval]                                                                                          | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               18 |             64 |         3.56 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/div[quotient]                                | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               26 |             64 |         2.46 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/multiplier_core_serial.mul[prod][63]_i_1_n_0 | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               16 |             64 |         4.00 |
+|  clk_i_IBUF_BUFG | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/E[0]                                                                                                | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |               20 |             70 |         3.50 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                                                               | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_ext |               40 |            115 |         2.88 |
+|  clk_i_IBUF_BUFG |                                                                                                                                                                                                               | design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys |              151 |            403 |         2.67 |
++------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+
+

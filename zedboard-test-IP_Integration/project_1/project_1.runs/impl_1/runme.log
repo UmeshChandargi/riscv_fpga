@@ -1,0 +1,890 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/chandargi/.Xilinx/Vivado/Vivado_init.tcl'
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1431.801 ; gain = 64.883 ; free physical = 2292159 ; free virtual = 5355900
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/chandargi/GIT_repo/neorv32-setups/neorv32/rtl/system_integration/neorv32_vivado_ip_work/packaged_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cad/xilinx/Vivado/2023.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_neorv32_vivado_ip_0_0/design_1_neorv32_vivado_ip_0_0.dcp' for cell 'design_1_i/neorv32_vivado_ip_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.dcp' for cell 'design_1_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp' for cell 'design_1_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1828.070 ; gain = 0.000 ; free physical = 2292096 ; free virtual = 5355624
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.srcs/constrs_1/new/design_1.xdc]
+Finished Parsing XDC File [/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.srcs/constrs_1/new/design_1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2202.570 ; gain = 0.000 ; free physical = 2291617 ; free virtual = 5355169
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2202.570 ; gain = 747.988 ; free physical = 2291806 ; free virtual = 5355361
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.61 . Memory (MB): peak = 2202.570 ; gain = 0.000 ; free physical = 2292016 ; free virtual = 5355593
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2655.145 ; gain = 452.574 ; free physical = 2291411 ; free virtual = 5355002
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290771 ; free virtual = 5354365
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290768 ; free virtual = 5354362
+Phase 1 Initialization | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290767 ; free virtual = 5354361
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290719 ; free virtual = 5354313
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290722 ; free virtual = 5354316
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1c8e2dadf
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290721 ; free virtual = 5354315
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 42 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 21c6f2269
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290775 ; free virtual = 5354370
+Retarget | Checksum: 21c6f2269
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 32 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 27d757615
+
+Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.2 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290827 ; free virtual = 5354422
+Constant propagation | Checksum: 27d757615
+INFO: [Opt 31-389] Phase Constant propagation created 12 cells and removed 25 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 244b467eb
+
+Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2961.949 ; gain = 0.000 ; free physical = 2290785 ; free virtual = 5354381
+Sweep | Checksum: 244b467eb
+INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 107 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG clk_i_IBUF_BUFG_inst to drive 1849 load(s) on clock net clk_i_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 1a2cc61fe
+
+Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290750 ; free virtual = 5354345
+BUFG optimization | Checksum: 1a2cc61fe
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1a2cc61fe
+
+Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290747 ; free virtual = 5354343
+Shift Register Optimization | Checksum: 1a2cc61fe
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1e7a7617b
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290745 ; free virtual = 5354341
+Post Processing Netlist | Checksum: 1e7a7617b
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.44 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290824 ; free virtual = 5354422
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2993.965 ; gain = 0.000 ; free physical = 2290853 ; free virtual = 5354451
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290852 ; free virtual = 5354450
+Phase 9 Finalization | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290850 ; free virtual = 5354448
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               2  |              32  |                                              1  |
+|  Constant propagation         |              12  |              25  |                                              0  |
+|  Sweep                        |               8  |             107  |                                              0  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2993.965 ; gain = 32.016 ; free physical = 2290850 ; free virtual = 5354447
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2993.965 ; gain = 0.000 ; free physical = 2290848 ; free virtual = 5354445
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 82 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 164
+Ending PowerOpt Patch Enables Task | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3418.438 ; gain = 0.000 ; free physical = 2290333 ; free virtual = 5353963
+Ending Power Optimization Task | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3418.438 ; gain = 424.473 ; free physical = 2290326 ; free virtual = 5353956
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3418.438 ; gain = 0.000 ; free physical = 2290326 ; free virtual = 5353956
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3418.438 ; gain = 0.000 ; free physical = 2290326 ; free virtual = 5353956
+Ending Netlist Obfuscation Task | Checksum: 1a4302f57
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3418.438 ; gain = 0.000 ; free physical = 2290326 ; free virtual = 5353956
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3418.438 ; gain = 1215.867 ; free physical = 2290325 ; free virtual = 5353955
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290795 ; free virtual = 5354441
+Wrote PlaceDB: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290793 ; free virtual = 5354440
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290766 ; free virtual = 5354412
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290732 ; free virtual = 5354379
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290701 ; free virtual = 5354349
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290692 ; free virtual = 5354340
+Write Physdb Complete: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.27 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290685 ; free virtual = 5354333
+INFO: [Common 17-1381] The checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291017 ; free virtual = 5354677
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 160256049
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291049 ; free virtual = 5354709
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291076 ; free virtual = 5354736
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1616f418e
+
+Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291037 ; free virtual = 5354736
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b2559b6e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290836 ; free virtual = 5354522
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b2559b6e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290833 ; free virtual = 5354519
+Phase 1 Placer Initialization | Checksum: 1b2559b6e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290821 ; free virtual = 5354507
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1f8106284
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290972 ; free virtual = 5354662
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 231770cc6
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290923 ; free virtual = 5354617
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 231770cc6
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290917 ; free virtual = 5354611
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1ff72eab9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290617 ; free virtual = 5354340
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 25 LUTNM shape to break, 167 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 16, two critical 9, total 25, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 88 nets or LUTs. Breaked 25 LUTs, combined 63 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290906 ; free virtual = 5354633
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           25  |             63  |                    88  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           25  |             63  |                    88  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 12d89057d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291068 ; free virtual = 5354794
+Phase 2.4 Global Placement Core | Checksum: 1959be7e9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290881 ; free virtual = 5354608
+Phase 2 Global Placement | Checksum: 1959be7e9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290871 ; free virtual = 5354598
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 170209efb
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290730 ; free virtual = 5354457
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f4aea4b9
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290841 ; free virtual = 5354572
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 138369e38
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290811 ; free virtual = 5354543
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1c76d84a0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290803 ; free virtual = 5354536
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 190c0ab67
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290863 ; free virtual = 5354612
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 15f383d48
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290464 ; free virtual = 5354222
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: ecda14d1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290604 ; free virtual = 5354366
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 115f5b11f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290607 ; free virtual = 5354369
+Phase 3 Detail Placement | Checksum: 115f5b11f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290595 ; free virtual = 5354358
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 9249fa9b
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.073 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: b3ee5e79
+
+Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290351 ; free virtual = 5354123
+INFO: [Place 46-33] Processed net design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/rstn_sys, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: b3ee5e79
+
+Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.32 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290287 ; free virtual = 5354059
+Phase 4.1.1.1 BUFG Insertion | Checksum: 9249fa9b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290268 ; free virtual = 5354042
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.519. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1536dea22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290364 ; free virtual = 5354142
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290364 ; free virtual = 5354142
+Phase 4.1 Post Commit Optimization | Checksum: 1536dea22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290352 ; free virtual = 5354130
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1536dea22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290313 ; free virtual = 5354092
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1536dea22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290298 ; free virtual = 5354077
+Phase 4.3 Placer Reporting | Checksum: 1536dea22
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290313 ; free virtual = 5354091
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290350 ; free virtual = 5354128
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290352 ; free virtual = 5354130
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20b9a5869
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290369 ; free virtual = 5354148
+Ending Placer Task | Checksum: 1e2618a27
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290373 ; free virtual = 5354151
+86 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290361 ; free virtual = 5354139
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290264 ; free virtual = 5354043
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290156 ; free virtual = 5353934
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290126 ; free virtual = 5353906
+Wrote PlaceDB: Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.41 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290135 ; free virtual = 5353924
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290126 ; free virtual = 5353918
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290113 ; free virtual = 5353904
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290107 ; free virtual = 5353899
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290098 ; free virtual = 5353892
+Write Physdb Complete: Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:00.5 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290093 ; free virtual = 5353887
+INFO: [Common 17-1381] The checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.62 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290113 ; free virtual = 5353911
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290199 ; free virtual = 5353997
+Wrote PlaceDB: Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.42 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2289981 ; free virtual = 5353782
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2289972 ; free virtual = 5353774
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2289953 ; free virtual = 5353755
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2289947 ; free virtual = 5353750
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2289939 ; free virtual = 5353743
+Write Physdb Complete: Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.48 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2289934 ; free virtual = 5353737
+INFO: [Common 17-1381] The checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: fea0041b ConstDB: 0 ShapeSum: e3c1860c RouteDB: 0
+Post Restoration Checksum: NetGraph: 8b2635ba | NumContArr: 61c6bf31 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2723eea25
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291532 ; free virtual = 5354898
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2723eea25
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291532 ; free virtual = 5354898
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2723eea25
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2291532 ; free virtual = 5354898
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 19cdf52d1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290455 ; free virtual = 5354037
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.495  | TNS=0.000  | WHS=-0.173 | THS=-31.491|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 3862
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 3862
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 279b2d26c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290359 ; free virtual = 5353976
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 279b2d26c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 3442.449 ; gain = 0.000 ; free physical = 2290358 ; free virtual = 5353975
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 1fe377aec
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2291276 ; free virtual = 5354935
+Phase 3 Initial Routing | Checksum: 1fe377aec
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2291269 ; free virtual = 5354928
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 733
+ Number of Nodes with overlaps = 206
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 48
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.213  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1ff28f462
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290518 ; free virtual = 5354251
+Phase 4 Rip-up And Reroute | Checksum: 1ff28f462
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290515 ; free virtual = 5354248
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 25ed90c27
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290455 ; free virtual = 5354189
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.344  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 25ed90c27
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290452 ; free virtual = 5354186
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 25ed90c27
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290449 ; free virtual = 5354183
+Phase 5 Delay and Skew Optimization | Checksum: 25ed90c27
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290447 ; free virtual = 5354181
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 26b0d10e5
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290324 ; free virtual = 5354145
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.344  | TNS=0.000  | WHS=0.046  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 17f9288c2
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290295 ; free virtual = 5354121
+Phase 6 Post Hold Fix | Checksum: 17f9288c2
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290273 ; free virtual = 5354102
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.05882 %
+  Global Horizontal Routing Utilization  = 2.0104 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 17f9288c2
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290165 ; free virtual = 5354016
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 17f9288c2
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290154 ; free virtual = 5354008
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16d446b46
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2290014 ; free virtual = 5353885
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.344  | TNS=0.000  | WHS=0.046  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 16d446b46
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2289797 ; free virtual = 5353680
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: febd2762
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2289777 ; free virtual = 5353663
+Ending Routing Task | Checksum: febd2762
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2289717 ; free virtual = 5353603
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+110 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 3471.273 ; gain = 28.824 ; free physical = 2289709 ; free virtual = 5353598
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+120 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290379 ; free virtual = 5354081
+Wrote PlaceDB: Time (s): cpu = 00:00:00.76 ; elapsed = 00:00:00.42 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290365 ; free virtual = 5354075
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290358 ; free virtual = 5354068
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290324 ; free virtual = 5354035
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290320 ; free virtual = 5354033
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290317 ; free virtual = 5354031
+Write Physdb Complete: Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3559.336 ; gain = 0.000 ; free physical = 2290316 ; free virtual = 5354030
+INFO: [Common 17-1381] The checkpoint '/home/chandargi/GIT_repo/neorv32-setups/vivado/zedboard-test-IP_Integration/project_1/project_1.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+Command: write_bitstream -force design_1_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_wb_en]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_zero_we]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_wb_en]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_zero_we]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+Writing bitstream ./design_1_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 3750.203 ; gain = 190.867 ; free physical = 2290234 ; free virtual = 5354115
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 18:35:01 2024...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/chandargi/.Xilinx/Vivado/Vivado_init.tcl'
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1794.676 ; gain = 0.000 ; free physical = 2260670 ; free virtual = 5332205
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1873.395 ; gain = 1.000 ; free physical = 2260572 ; free virtual = 5332126
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259982 ; free virtual = 5331577
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259982 ; free virtual = 5331577
+Read PlaceDB: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259980 ; free virtual = 5331575
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259980 ; free virtual = 5331575
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259979 ; free virtual = 5331575
+Read Physdb Files: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259979 ; free virtual = 5331575
+Restored from archive | CPU: 0.270000 secs | Memory: 7.910461 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2495.973 ; gain = 7.938 ; free physical = 2259979 ; free virtual = 5331575
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.973 ; gain = 0.000 ; free physical = 2259978 ; free virtual = 5331574
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.2 (64-bit) build 4029153
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 2496.008 ; gain = 1146.930 ; free physical = 2259977 ; free virtual = 5331573
+Command: write_bitstream -force design_1_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/cad/xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_wb_en]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_zero_we]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][18]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[8] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[3]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_wb_en]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_reg[rf_zero_we]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/execute_engine_reg[ir][19]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg has an input control pin design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/register_file_fpga.reg_file_reg/ADDRARDADDR[9] (net: design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_regfile_inst/ADDRARDADDR[4]) which is driven by a register (design_1_i/neorv32_vivado_ip_0/U0/neorv32_top_inst/core_complex.neorv32_cpu_inst/neorv32_cpu_control_inst/trap_ctrl_reg[exc_buf][8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+Writing bitstream ./design_1_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 3055.141 ; gain = 559.133 ; free physical = 2259449 ; free virtual = 5331124
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 16:27:35 2024...
