@@ -1,0 +1,47 @@
+/*
+ * Copyright (c) 2021 Henrik Brix Andersen <henrik@brixandersen.dk>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#ifndef RISCV_NEORV32_SOC_H
+#define RISCV_NEORV32_SOC_H
+
+/* System information (SYSINFO) register offsets */
+#define NEORV32_SYSINFO_CLK         0x00U
+#define NEORV32_SYSINFO_MEM         0x04U
+#define NEORV32_SYSINFO_SOC         0x08U
+#define NEORV32_SYSINFO_CACHE       0x0cU
+
+/* System information (SYSINFO) FEATURES register bits */
+#define NEORV32_SYSINFO_SOC_BOOTLOADER     BIT(0)
+#define NEORV32_SYSINFO_SOC_XBUS           BIT(1)
+#define NEORV32_SYSINFO_SOC_MEM_INT_IMEM   BIT(2)
+#define NEORV32_SYSINFO_SOC_MEM_INT_DMEM   BIT(3)
+#define NEORV32_SYSINFO_SOC_OCD            BIT(4)
+#define NEORV32_SYSINFO_SOC_ICACHE         BIT(5)
+#define NEORV32_SYSINFO_SOC_DCACHE         BIT(6)
+#define NEORV32_SYSINFO_SOC_CLOCK_GATING   BIT(7)
+#define NEORV32_SYSINFO_SOC_XBUS_CACHE     BIT(8)
+#define NEORV32_SYSINFO_SOC_XIP            BIT(9)
+#define NEORV32_SYSINFO_SOC_XIP_CACHE      BIT(10)
+#define NEORV32_SYSINFO_SOC_IO_DMA         BIT(14)
+#define NEORV32_SYSINFO_SOC_IO_GPIO        BIT(15)
+#define NEORV32_SYSINFO_SOC_IO_MTIME       BIT(16)
+#define NEORV32_SYSINFO_SOC_IO_UART0       BIT(17)
+#define NEORV32_SYSINFO_SOC_IO_SPI         BIT(18)
+#define NEORV32_SYSINFO_SOC_IO_TWI         BIT(19)
+#define NEORV32_SYSINFO_SOC_IO_PWM         BIT(20)
+#define NEORV32_SYSINFO_SOC_IO_WDT         BIT(21)
+#define NEORV32_SYSINFO_SOC_IO_CFS         BIT(22)
+#define NEORV32_SYSINFO_SOC_IO_TRNG        BIT(23)
+#define NEORV32_SYSINFO_SOC_IO_SDI         BIT(24)
+#define NEORV32_SYSINFO_SOC_IO_UART1       BIT(25)
+#define NEORV32_SYSINFO_SOC_IO_NEOLED      BIT(26)
+#define NEORV32_SYSINFO_SOC_IO_XIRQ        BIT(27)
+#define NEORV32_SYSINFO_SOC_IO_GPTMR       BIT(28)
+#define NEORV32_SYSINFO_SOC_IO_SLINK       BIT(29)
+#define NEORV32_SYSINFO_SOC_IO_ONEWIRE     BIT(30)
+#define NEORV32_SYSINFO_SOC_IO_CRC         BIT(31)
+
+#endif /* RISCV_NEORV32_SOC_H */
